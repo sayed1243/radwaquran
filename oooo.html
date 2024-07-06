@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغيير شكل الخط لكلمة في h1</title>
+    <!-- استيراد الخط من Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap">
+    <style>
+    	h1{text-align:center;}
+        .custom-font {
+            font-family: 'Cairo', sans-serif; /* الخط المستخدم من Google Fonts */
+            font-size: 2em; /* حجم الخط */
+            color: red; /* لون الخط */
+        }
+       body {
+       	background-color: #fffacd; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #4CAF50;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 999;
+            direction: rtl; /* لمحاذاة النصوص والقوائم من اليمين لليسار */
+        }
+
+        .side-menu a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            text-align: right; /* لمحاذاة النصوص من اليمين */
+        }
+
+        .side-menu a:hover {
+            background-color: #575757;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            margin: 0 10px;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="banner2">مميزات الأكاديمية</span></h1>
+      <p>أكاديمية رضوى للقرآن الكريم. هي مؤسسة تعليمية تهدف إلى نشر وتعليم كتاب الله لجميع الفئات العمرية بطرق حديثة ومتطورة تتضمن الأكاديمية مجموعة متنوعة من البرامج التعليمية التي تشمل دروس التحفيظ اليومي، والتجويد، والتفسير، والتدبر.</p>
+    <p>تهدف هذه البرامج إلى مساعدة الطلاب على فهم القرآن الكريم بشكل شامل، وتحفيزهم على تطبيق تعاليمه في حياتهم اليومية. تعتمد الأكاديمية على فريق من المدرسين المؤهلين ذوي الخبرة في علوم القرآن والتدريس، مما يضمن تقديم تعليم عالي الجودة.</p>
+    <p>بالإضافة إلى ذلك، توفر الأكاديمية بيئة تعليمية مميزة تتسم بالهدوء والتركيز، مما يساعد الطلاب على تحقيق أقصى استفادة من وقتهم في الدراسة.</p>
+    <p>تشمل الأكاديمية أيضًا أنشطة إضافية مثل مسابقات حفظ القرآن الكريم، وورش العمل، والمحاضرات التي تهدف إلى تعزيز معرفة الطلاب بعلوم القرآن وأحكامه. تسعى الأكاديمية إلى تخريج جيل متعلم ومتمسك بتعاليم دينه، قادر على نشر القيم الإسلامية السمحة في مجتمعه وتعزيز الروح الإسلامية الصحيحة.</p>
+<hr>
+	<hr>
+		<!-- أيقونة القائمة -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- القائمة الجانبية -->
+    <div id="side-menu" class="side-menu">
+        <a href="quran.html"> القائمة الرئيسية</a>
+        <a href="tel:01550690757">تواصل معنا</a>
+        <a href="https://www.facebook.com/profile.php?id=100085059527817&mibextid=ZbWKwL">منشىء الصفحة</a>
+    </div>
+		<!-- تذييل مع أيقونات التواصل الاجتماعي -->
+    <div class="footer">
+   <p>جميع الحقوق محفوظه لقرآن أونلاين <p>
+     
+        <a href="https://www.linkedin.com"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/profile.php?id=100080874420215&mibextid=ZbWKwL"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/radwamo456?igsh=Y3M2Z2ppdGZnOHl2"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+        
+    </div>
+      <script>
+        function toggleMenu() {
+            var menu = document.getElementById("side-menu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
+</body>
+</html>

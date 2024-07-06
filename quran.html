@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي</title>
+     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fffacd; /* خلفية صفراء باهتة */
+            font-family: 'Arial', sans-serif; /* تغيير الخط */
+            direction: rtl; /* لتنسيق النصوص من اليمين لليسار */
+             font-family: 'Amiri', serif; /* تغيير الخط لكامل المستند */
+        }
+
+        .tajawal-font {
+            font-family: 'Tajawal', sans-serif; /* تغيير الخط لعنصر معين */
+        
+        }
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+        hr {
+            border: 1px solid #000;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .menu-icon {
+            background-color: #4CAF50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            margin: 0 10px;
+        }
+        .footer img {
+            width: 30px;
+            height: 30px;
+        } 
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #4CAF50;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 999;
+        }
+
+        .side-menu a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background-color: #575757;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+            max-width: 1080px; /* الحد الأقصى للعرض */
+            height: 577px; /* حدد الطول (الارتفاع) هنا */
+            margin: 0 auto; /* مركزي البنر */
+            overflow: hidden; /* لمنع تجاوز الصورة */
+            border-radius: 20px; /* حواف دائرية للبنر */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* لضمان تغطية الصورة بالكامل */
+            object-position: center; /* لضمان تمركز الصورة */
+            border-radius: 20px; /* حواف دائرية للصورة لتتطابق مع حواف البنر */
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%; /* لضمان أن النصوص تتناسب مع عرض الشاشة */
+        }
+
+        .banner-text h1 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+
+        .banner-text p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        .banner-text a {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #d4a617;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        /* التكيف مع الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .banner {
+                height: auto; /* يجعل الارتفاع يتناسب مع المحتوى */
+            }
+
+            .banner-img {
+                height: auto;
+            }
+
+            .banner-text h1 {
+                font-size: 1.5em;
+            }
+
+            .banner-text p {
+                font-size: 1em;
+            }
+
+            .banner-text a {
+                font-size: 1em;
+            }
+        }
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-color: #4CAF50; /* لون خلفية البانر */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* لون النص */
+            text-align: center; /* محاذاة النص في المنتصف */
+            font-size: 20px; /* حجم الخط */
+        }
+        .banner2 {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 5px;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>أكاديمية رضوى لتحفيظ القرآن الكريم</h1>
+        <div class="banner">
+        <img src="صورة واتساب بتاريخ 2024-07-06 في 12.18.23_460aa6f8.jpg" alt="إعلان الحجز" class="banner-img"> <!-- تأكد من وضع المسار الصحيح للصورة -->
+        <div class="banner-text">
+            <h1>خيركم من تعلم القرآن وعلمه</h1>
+            <p>أكاديمية قرآن أون لاين</p>
+            <a href="https://Wa.me/020 1064905472">احجز الآن</a>
+        </div>
+    </div>
+        <hr>
+     
+
+
+        <hr>
+        <h1><span class="banner2">الرؤية</span></h1>
+        <p>نتطلع للتميز والريادة في مجال تعليم القرآن الكريم أون لاين وتعليم اللغة العربية لغير الناطقين بها، وللناطقين بها على حد سواء، وتقديم برامج علمية وتعليمية في بيئة محفزة تعتمد على التفاعل بين الطالب والمعلم وتركز على التعلم الذاتي باستخدام وسائل الاتصال الحديثة وتقنياتها على نحو يتيح فرصة التعلم لأكبر عدد من الراغبين على مستوى العالم ملتزمين معايير الجودة العالمية.</p>
+
+        <hr>
+        	       
+        <h1><span class="banner2">الأهداف</span></h1>
+         
+        <li>تيسير حفظ وتعليم القرآن عن بعد بالإضافة لتعلم علم التجويد</li>
+<br>
+ <li>إتاحة الفرصة التعليمية لكل الفئات العمرية لحفظ القرآن الكريم أون لاين</li>
+<br>
+<li>ربط الناشئة المغتربين باللغة العربية وتعليم القراءة العربية للأطفال</li>
+<br>
+  <li>تدريب الناشئة وتعليم القراءة العربية للأطفال والتلاوة السليمة المتقنة إضافة إلى تعزيز المهارات الكتابية واللفظية</li>
+<br>
+   <li>تعليم اللغة العربية لغير الناطقين بها ومنح الأطفال القدرة على التحدث باللغة الأم</li>
+<br>
+   <li>تزويد الناشئة بمناهج علمية ميسرة تخدم تعليم اللغة العربية لغير الناطقين بها</li>
+  <br>
+   <li>تخريج دفعات طلابية متقنة بشهادات حفظ القرآن الكريم أون لاين</li>
+<br>
+        <hr>
+           <hr>
+           	
+
+    <!-- أيقونة القائمة -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- القائمة الجانبية -->
+    <div id="side-menu" class="side-menu">
+        <a href="oooo.html">مميزات الأكاديمية</a>
+        <a href="tel:01550690757">تواصل معنا</a>
+        <a href="https://www.facebook.com/profile.php?id=100085059527817&mibextid=ZbWKwL">منشىء الصفحة</a>
+    </div>
+
+    <!-- تذييل مع أيقونات التواصل الاجتماعي -->
+    <div class="footer">
+   <p>جميع الحقوق محفوظه لقرآن أونلاين <p>
+     
+        <a href="https://www.linkedin.com"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/profile.php?id=100080874420215&mibextid=ZbWKwL"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/radwamo456?igsh=Y3M2Z2ppdGZnOHl2"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("side-menu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
+    
+    <!-- أيقونة القائمة -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+  
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("side-menu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
+    
+    </div>
+
+    </div>
+    </div>
+</body>
+</html>
